@@ -12,7 +12,7 @@ export class AppComponent {
 
   async ngOnInit(): Promise<void> {
     console.log("entro");
-
+    
     const H5P = require('@lumieducation/h5p-server');
 
     const h5pEditor = H5P.fs(

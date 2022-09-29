@@ -32,7 +32,8 @@
       "https": ["./node_modules/https-browserify"],
       "os": ["./node_modules/os-browserify"],
       "path": ["./node_modules/path-browserify"],
-      "zlib": ["./node_modules/browserify-zlib"]
+      "zlib":  [ "node_modules/browserify-zlib/lib/index.js", "node_modules/browserify-zlib/lib/binding.js"],
+      "constants": ["./node_modules/constants-browserify"]
     }
   },
   "angularCompilerOptions": {

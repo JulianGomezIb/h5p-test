@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import * as path from 'path'
-
+import * as H5P from '@lumieducation/h5p-server';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,8 +8,11 @@ import * as path from 'path'
 })
 export class AppComponent {
   title = 'h5p-test';
+  editor = H5P.H5PEditor;
 
   async ngOnInit(): Promise<void> {
+    console.log("entro");
+
     const H5P = require('@lumieducation/h5p-server');
 
     const h5pEditor = H5P.fs(
